@@ -1,0 +1,209 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Tue Jul 11 14:01:55 2017
+# Process ID: 6764
+# Current directory: E:/Code/Vivado/MIPS32
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5700 E:\Code\Vivado\MIPS32\project.xpr
+# Log file: E:/Code/Vivado/MIPS32/vivado.log
+# Journal file: E:/Code/Vivado/MIPS32\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Code/Vivado/MIPS32/project.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Vivodo/1/Vivado/2017.1/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 825.043 ; gain = 117.836
+update_compile_order -fileset sources_1
+add_files {E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/ex_mem.v E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/mem.v E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/if_id.v E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/ex.v E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/regfile.v E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/openmips.v E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/id.v E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/inst_rom.v E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/openmips_min_sopc_tb.v E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/pc_reg.v E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/mem_wb.v E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/defines.v E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/id_ex.v E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/openmips_min_sopc.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+move_files -fileset sim_1 [get_files  E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/openmips_min_sopc_tb.v]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+set_property top openmips_min_sopc_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+close [ open E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/1.v w ]
+add_files E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/1.v
+update_compile_order -fileset sources_1
+remove_files  E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/1.v
+file delete -force E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/1.v
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'openmips_min_sopc_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Code/Vivado/MIPS32/project.sim/sim_1/behav'
+"xvlog -m64 --relax -prj openmips_min_sopc_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/ex_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/id.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/id_ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/if_id.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/inst_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/mem_wb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/openmips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/openmips_min_sopc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips_min_sopc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/pc_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/openmips_min_sopc_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips_min_sopc_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/Vivado/MIPS32/project.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Code/Vivado/MIPS32/project.sim/sim_1/behav'
+Vivado Simulator 2017.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: F:/Vivodo/1/Vivado/2017.1/bin/unwrapped/win64.o/xelab.exe -wto 948ed75a0d1f4a9d83801b93fdaaa068 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot openmips_min_sopc_tb_behav xil_defaultlib.openmips_min_sopc_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/openmips_min_sopc.v" Line 40. Module openmips_min_sopc doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/mem_wb.v" Line 35. Module mem_wb doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/openmips_min_sopc.v" Line 40. Module openmips_min_sopc doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/mem_wb.v" Line 35. Module mem_wb doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.openmips
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.openmips_min_sopc
+Compiling module xil_defaultlib.openmips_min_sopc_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot openmips_min_sopc_tb_behav
+
+****** Webtalk v2017.1 (64-bit)
+  **** SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+  **** IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/Code/Vivado/MIPS32/project.sim/sim_1/behav/xsim.dir/openmips_min_sopc_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'E:/Code/Vivado/MIPS32/project.sim/sim_1/behav/xsim.dir/openmips_min_sopc_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Jul 11 14:39:24 2017. For additional details about this file, please refer to the WebTalk help file at F:/Vivodo/1/Vivado/2017.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Jul 11 14:39:24 2017...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:19 . Memory (MB): peak = 855.148 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '20' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/Code/Vivado/MIPS32/project.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "openmips_min_sopc_tb_behav -key {Behavioral:sim_1:Functional:openmips_min_sopc_tb} -tclbatch {openmips_min_sopc_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.1
+Time resolution is 1 ps
+source openmips_min_sopc_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 862.848 ; gain = 7.699
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'openmips_min_sopc_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:31 . Memory (MB): peak = 862.848 ; gain = 7.699
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 899.684 ; gain = 0.000
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'openmips_min_sopc_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/Code/Vivado/MIPS32/project.sim/sim_1/behav'
+"xvlog -m64 --relax -prj openmips_min_sopc_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/ex_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ex_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/id.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/id_ex.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module id_ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/if_id.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module if_id
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/inst_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inst_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/mem_wb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem_wb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/openmips.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/openmips_min_sopc.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips_min_sopc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/pc_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pc_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/openmips_min_sopc_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module openmips_min_sopc_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/Vivado/MIPS32/project.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/Code/Vivado/MIPS32/project.sim/sim_1/behav'
+Vivado Simulator 2017.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: F:/Vivodo/1/Vivado/2017.1/bin/unwrapped/win64.o/xelab.exe -wto 948ed75a0d1f4a9d83801b93fdaaa068 --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot openmips_min_sopc_tb_behav xil_defaultlib.openmips_min_sopc_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/openmips_min_sopc.v" Line 40. Module openmips_min_sopc doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/mem_wb.v" Line 35. Module mem_wb doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/openmips_min_sopc.v" Line 40. Module openmips_min_sopc doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/mem_wb.v" Line 35. Module mem_wb doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.pc_reg
+Compiling module xil_defaultlib.if_id
+Compiling module xil_defaultlib.id
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.id_ex
+Compiling module xil_defaultlib.ex
+Compiling module xil_defaultlib.ex_mem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.mem_wb
+Compiling module xil_defaultlib.openmips
+Compiling module xil_defaultlib.inst_rom
+Compiling module xil_defaultlib.openmips_min_sopc
+Compiling module xil_defaultlib.openmips_min_sopc_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot openmips_min_sopc_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2017.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 899.684 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
