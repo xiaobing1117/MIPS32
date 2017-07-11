@@ -1,6 +1,6 @@
 @echo off
-set xv_path=C:\\Xilinx\\Vivado\\2017.1\\bin
-call %xv_path%/xsim simu_behav -key {Behavioral:sim_1:Functional:simu} -tclbatch simu.tcl -log simulate.log
+set xv_path=F:\\Vivodo\\1\\Vivado\\2017.1\\bin
+call %xv_path%/xsim openmips_min_sopc_tb_behav -key {Behavioral:sim_1:Functional:openmips_min_sopc_tb} -tclbatch openmips_min_sopc_tb.tcl -log simulate.log
 if "%errorlevel%"=="0" goto SUCCESS
 if "%errorlevel%"=="1" goto END
 :END

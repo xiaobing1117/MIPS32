@@ -1,7 +1,7 @@
 @echo off
-set xv_path=C:\\Xilinx\\Vivado\\2017.1\\bin
-echo "xvlog -m64 --relax -prj simu_vlog.prj"
-call %xv_path%/xvlog  -m64 --relax -prj simu_vlog.prj -log xvlog.log
+set xv_path=F:\\Vivodo\\1\\Vivado\\2017.1\\bin
+echo "xvlog -m64 --relax -prj openmips_min_sopc_tb_vlog.prj"
+call %xv_path%/xvlog  -m64 --relax -prj openmips_min_sopc_tb_vlog.prj -log xvlog.log
 call type xvlog.log > compile.log
 if "%errorlevel%"=="1" goto END
 if "%errorlevel%"=="0" goto SUCCESS
