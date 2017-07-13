@@ -2,13 +2,13 @@
 # Webtalk v2017.1 (64-bit)
 # SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
 # IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
-# Start of session at: Wed Jul 12 13:53:45 2017
-# Process ID: 1476
+# Start of session at: Thu Jul 13 15:57:39 2017
+# Process ID: 4220
 # Current directory: E:/Code/Vivado/MIPS32/project.sim/sim_1/behav
 # Command line: wbtcv.exe -mode batch -source E:/Code/Vivado/MIPS32/project.sim/sim_1/behav/xsim.dir/openmips_min_sopc_tb_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: E:/Code/Vivado/MIPS32/project.sim/sim_1/behav/webtalk.log
 # Journal file: E:/Code/Vivado/MIPS32/project.sim/sim_1/behav\webtalk.jou
 #-----------------------------------------------------------
 source E:/Code/Vivado/MIPS32/project.sim/sim_1/behav/xsim.dir/openmips_min_sopc_tb_behav/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] 'E:/Code/Vivado/MIPS32/project.sim/sim_1/behav/xsim.dir/openmips_min_sopc_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Wed Jul 12 13:53:49 2017. For additional details about this file, please refer to the WebTalk help file at F:/Vivodo/1/Vivado/2017.1/doc/webtalk_introduction.html.
-INFO: [Common 17-206] Exiting Webtalk at Wed Jul 12 13:53:49 2017...
+INFO: [Common 17-186] 'E:/Code/Vivado/MIPS32/project.sim/sim_1/behav/xsim.dir/openmips_min_sopc_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Jul 13 15:57:42 2017. For additional details about this file, please refer to the WebTalk help file at F:/Vivodo/1/Vivado/2017.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Thu Jul 13 15:57:42 2017...

@@ -2,7 +2,6 @@
 `include "defines.v"
 
 module regfile(
-
 	input wire clk,
 	input wire	rst,
 	
@@ -19,8 +18,7 @@ module regfile(
 	//¶Á¶Ë¿Ú2
 	input wire re2,
 	input wire[`RegAddrBus] raddr2,
-	output reg[`RegBus] rdata2
-	
+	output reg[`RegBus] rdata2	
 );
 
 	reg[`RegBus] regs[0:`RegNum-1];
@@ -35,7 +33,7 @@ module regfile(
 	
 	always @ (*) begin
 		if(rst == `RstEnable) begin
-			  rdata1 <= `ZeroWord;
+			rdata1 <= `ZeroWord;
 	    end else if(raddr1 == `RegNumLog2'h0) begin
 	  		rdata1 <= `ZeroWord;
 	    end else if((raddr1 == waddr) && (we == `WriteEnable) 

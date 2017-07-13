@@ -2,10 +2,8 @@
 `include "defines.v"
 
 module id_ex(
-
 	input wire clk,
 	input wire	rst,
-
 	
 	//从译码阶段传递的信息
 	input wire[`AluOpBus]         id_aluop,
@@ -22,7 +20,6 @@ module id_ex(
 	output reg[`RegBus]           ex_reg2,
 	output reg[`RegAddrBus]       ex_wd,
 	output reg                    ex_wreg
-	
 );
 
 	always @ (posedge clk) begin
