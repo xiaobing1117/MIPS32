@@ -1,24 +1,24 @@
-Unable to capture context for thread 2312 in process 11032, can not generate back trace
-Unable to capture context for thread 10916 in process 11032, can not generate back trace
-Unable to capture context for thread 9460 in process 11032, can not generate back trace
-Unable to capture context for thread 2668 in process 11032, can not generate back trace
+Unable to capture context for thread 1168 in process 9016, can not generate back trace
+Unable to capture context for thread 6852 in process 9016, can not generate back trace
+Unable to capture context for thread 7508 in process 9016, can not generate back trace
+Unable to capture context for thread 6204 in process 9016, can not generate back trace
 Exception at PC 0x00007FFD9FC19E08
-Unable to capture context for thread 4344 in process 11032, can not generate back trace
-Unable to capture context for thread 8720 in process 11032, can not generate back trace
-Unable to capture context for thread 4324 in process 11032, can not generate back trace
+Unable to capture context for thread 7792 in process 9016, can not generate back trace
+Unable to capture context for thread 6068 in process 9016, can not generate back trace
+Unable to capture context for thread 6116 in process 9016, can not generate back trace
 Exception at PC 0x00007FFD9FC19E08
 Exception at PC 0x00007FFD9FC19E08
 Exception at PC 0x00007FFD9FC19E08
-Unable to capture context for thread 7200 in process 11032, can not generate back trace
-Unable to capture context for thread 7336 in process 11032, can not generate back trace
-Unable to capture context for thread 7768 in process 11032, can not generate back trace
-Unable to capture context for thread 7200 in process 11032, can not generate back trace
-Unable to capture context for thread 7336 in process 11032, can not generate back trace
-Unable to capture context for thread 7768 in process 11032, can not generate back trace
+Unable to capture context for thread 3520 in process 9016, can not generate back trace
+Unable to capture context for thread 8444 in process 9016, can not generate back trace
 Exception at PC 0x00007FFD9FC19E08
+Unable to capture context for thread 3520 in process 9016, can not generate back trace
+Unable to capture context for thread 8444 in process 9016, can not generate back trace
+Unable to capture context for thread 6524 in process 9016, can not generate back trace
 Exception at PC 0x00007FFD3B42BB93
 Printing stacktrace...
 
+Unable to capture context for thread 6524 in process 9016, can not generate back trace
 Exception at PC 0x00007FFD9FC19E08
 Exception at PC 0x00007FFD9FC19E08
 Exception at PC 0x00007FFD9FC19E08
@@ -32,43 +32,3 @@ Exception at PC 0x00007FFD9FC19E08
 Exception at PC 0x00007FFD9FC19E08
 Exception at PC 0x00007FFD9FC19E08
 Exception at PC 0x00007FFD9FC19E08
-[0]  [0x00007FFD3B42BB93]
-[1]  [0x00007FFD3B42BB93]
-[2]  [0x00007FFD3B42B4A1]
-[3]  [0x00007FFD3B42B3EF]
-[4]  [0x00007FFD3B4119FE]
-[5]  [0x00007FFD3B410ED1]
-[6]  [0x00007FFD3B410D76]
-[7]  [0x00007FFD3B3B79F6]
-[8]  [0x00007FFD3B3A7AFB]
-[9]  [0x00007FFD3B4CE90A]
-[10]  [0x00007FFD3B4E9F87]
-[11]  [0x00007FFD3B4EA05F]
-[12] (BaseThreadInitThunk+0x14) [0x00007FFDA1B32774]
-[13] (RtlUserThreadStart+0x21) [0x00007FFDA2C00D61]
-Done
-Exception at PC 0x00007FFD3B131A52
-Attemped to write at address 0x00007FFD76A09BA4
-Printing stacktrace...
-
-[0]  [0x00007FFD3B131A52]
-[1]  [0x00007FFD3B131A52]
-[2]  [0x00007FFD3B131AD4]
-[3]  [0x00007FFD3B273FF7]
-[4]  [0x00007FFD3B159128]
-[5]  [0x00007FFD3B40DFB9]
-[6]  [0x00007FFD3B5DEF23]
-[7]  [0x00007FFD3B4EB06B]
-[8]  [0x00007FFD3B4E08AF]
-[9]  [0x00007FFD3B4E0A32]
-[10] (RtlDeactivateActivationContextUnsafeFast+0x1af) [0x00007FFDA2BB486F]
-[11] (LdrShutdownProcess+0x12c) [0x00007FFDA2BDD44C]
-[12] (RtlExitUserProcess+0xb4) [0x00007FFDA2BDD304]
-[13] (FatalExit+0xa) [0x00007FFDA1B3C0DA]
-[14] (exit+0x75) [0x00007FFDA25DA045]
-[15] (initterm_e+0x21d) [0x00007FFDA25DA68D]
-[16]  [0x00000000004014CD]
-[17]  [0x000000000040151B]
-[18] (BaseThreadInitThunk+0x14) [0x00007FFDA1B32774]
-[19] (RtlUserThreadStart+0x21) [0x00007FFDA2C00D61]
-Done
