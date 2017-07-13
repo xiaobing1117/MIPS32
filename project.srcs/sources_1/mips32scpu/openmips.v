@@ -74,7 +74,7 @@ module openmips(
     wire[`RegBus]   hi;
     wire[`RegBus]   lo;
   
-  //pc_reg例化
+    //pc_reg例化
 	pc_reg pc_reg0(
 		.clk(clk),
 		.rst(rst),
@@ -83,9 +83,9 @@ module openmips(
 			
 	);
 	
-  assign rom_addr_o = pc;
+    assign rom_addr_o = pc;
 
-  //IF/ID模块例化
+    //IF/ID模块例化
 	if_id if_id0(
 		.clk(clk),
 		.rst(rst),
