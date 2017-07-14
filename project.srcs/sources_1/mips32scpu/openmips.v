@@ -170,6 +170,9 @@ module openmips(
         .wd_i(ex_wd_i),
         .wreg_i(ex_wreg_i),
         
+        .hi_i(hi),
+        .lo_i(lo),
+        
         .wb_hi_i(wb_hi_i),
         .wb_lo_i(wb_lo_i),
         .wb_whilo_i(wb_whilo_i),
@@ -179,7 +182,11 @@ module openmips(
         
         .wd_o(ex_wd_o),
         .wreg_o(ex_wreg_o),
-        .wdata_o(ex_wdata_o)
+        .wdata_o(ex_wdata_o),
+        
+ 		.hi_o(ex_hi_o),
+        .lo_o(ex_lo_o),
+        .whilo_o(ex_whilo_o)       
 	);
 	
 	ex_mem ex_mem0(

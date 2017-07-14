@@ -1,22 +1,14 @@
-Unable to capture context for thread 8616 in process 8116, can not generate back trace
-Unable to capture context for thread 7580 in process 8116, can not generate back trace
 Exception at PC 0x00007FFD9FC19E08
-Unable to capture context for thread 4516 in process 8116, can not generate back trace
-Unable to capture context for thread 1124 in process 8116, can not generate back trace
-Unable to capture context for thread 6476 in process 8116, can not generate back trace
-Unable to capture context for thread 11212 in process 8116, can not generate back trace
-Unable to capture context for thread 5448 in process 8116, can not generate back trace
-Exception at PC 0x00007FFD9FC19E08
-Unable to capture context for thread 7604 in process 8116, can not generate back trace
-Unable to capture context for thread 7424 in process 8116, can not generate back trace
-Exception at PC 0x00007FFD9FC19E08
-Unable to capture context for thread 7604 in process 8116, can not generate back trace
-Unable to capture context for thread 7424 in process 8116, can not generate back trace
-Unable to capture context for thread 5464 in process 8116, can not generate back trace
-Exception at PC 0x00007FFD480FBB93
+Unable to capture context for thread 5640 in process 4160, can not generate back trace
+Unable to capture context for thread 2448 in process 4160, can not generate back trace
+Unable to capture context for thread 4244 in process 4160, can not generate back trace
+Exception at PC 0x00007FFD4807BB93
 Printing stacktrace...
 
-Unable to capture context for thread 5464 in process 8116, can not generate back trace
+Unable to capture context for thread 5640 in process 4160, can not generate back trace
+Unable to capture context for thread 4244 in process 4160, can not generate back trace
+Exception at PC 0x00007FFD9FC19E08
+Exception at PC 0x00007FFD9FC19E08
 Exception at PC 0x00007FFD9FC19E08
 Exception at PC 0x00007FFD9FC19E08
 Exception at PC 0x00007FFD9FC19E08
