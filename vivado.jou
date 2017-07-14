@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Fri Jul 14 08:33:00 2017
+# Process ID: 7776
+# Current directory: E:/Code/Vivado/MIPS32
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1704 E:\Code\Vivado\MIPS32\project.xpr
+# Log file: E:/Code/Vivado/MIPS32/vivado.log
+# Journal file: E:/Code/Vivado/MIPS32\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/Code/Vivado/MIPS32/project.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source openmips_min_sopc_tb.tcl
+relaunch_sim
+close_sim
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_simulation
+source openmips_min_sopc_tb.tcl
+relaunch_sim
+close_sim
