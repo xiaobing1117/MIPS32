@@ -32,7 +32,8 @@ module ex(
 
 	output reg[`RegBus]           hi_o,
 	output reg[`RegBus]           lo_o,
-	output reg                    whilo_o		
+	output reg                    whilo_o,		
+    output reg                    stallreq
 );
 
 	reg[`RegBus] logicout;

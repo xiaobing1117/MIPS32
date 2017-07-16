@@ -31,7 +31,8 @@ module id(
 	output reg[`RegBus]           reg1_o,
 	output reg[`RegBus]           reg2_o,
 	output reg[`RegAddrBus]       wd_o,
-	output reg                    wreg_o
+	output reg                    wreg_o,
+    output wire                   stallreq
 );
 
     wire[5:0] op = inst_i[31:26];
@@ -40,6 +41,8 @@ module id(
     wire[4:0] op4 = inst_i[20:16];
     reg[`RegBus] imm;
     reg instvalid;
+
+    assign stallreq = `NoStop;  
   
     always @ (*) begin	
 		if (rst == `RstEnable) begin

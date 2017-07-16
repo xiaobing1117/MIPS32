@@ -21,6 +21,10 @@
 `define True_v 1'b1
 `define Flase_v 1'b0
 
+//stream
+`define Stop 1'b1
+`define NoStop 1'b0
+
 //others\
 `define ZeroWord 32'h00000000
 `define AluOpBus 7:0

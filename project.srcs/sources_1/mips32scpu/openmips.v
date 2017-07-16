@@ -75,10 +75,16 @@ module openmips(
     //hilo module
 	wire[`RegBus] 	hi;
     wire[`RegBus]   lo;
+    
+    //stall module
+    wire[5:0] stall;
+    wire stallreq_from_id;
+    wire stallreq_from_ex;
 	
 	pc_reg pc_reg0(
         .clk(clk),
         .rst(rst),
+        .stall(stall),
         .pc(pc),
         .ce(rom_ce_o)
 	);
@@ -88,6 +94,7 @@ module openmips(
 	if_id if_id0(
         .clk(clk),
         .rst(rst),
+        .stall(stall),
         
         .if_pc(pc),
         .if_inst(rom_data_i),
@@ -122,7 +129,8 @@ module openmips(
         .reg1_o(id_reg1_o),
         .reg2_o(id_reg2_o),
         .wd_o(id_wd_o),
-        .wreg_o(id_wreg_o)
+        .wreg_o(id_wreg_o),
+        .stallreq(stallreq_from_id)
 	);
 	
 	regfile regfile1(
@@ -144,6 +152,7 @@ module openmips(
 	id_ex id_ex0(
         .clk(clk),
         .rst(rst),
+        .stall(stall),
         
         .id_aluop(id_aluop_o),
         .id_alusel(id_alusel_o),
@@ -186,12 +195,14 @@ module openmips(
         
  		.hi_o(ex_hi_o),
         .lo_o(ex_lo_o),
-        .whilo_o(ex_whilo_o)       
+        .whilo_o(ex_whilo_o),
+        .stallreq(stallreq_from_ex)      
 	);
 	
 	ex_mem ex_mem0(
         .clk(clk),
         .rst(rst),
+        .stall(stall),
         
         .ex_wd(ex_wd_o),
         .ex_wreg(ex_wreg_o),
@@ -233,6 +244,7 @@ module openmips(
 	mem_wb mem_wb0(
         .clk(clk),
         .rst(rst),
+        .stall(stall),
         
         .mem_wd(mem_wd_o),
         .mem_wreg(mem_wreg_o),
@@ -264,5 +276,12 @@ module openmips(
         .hi_o(hi),
         .lo_o(lo)    
     );
+	
+	ctrl ctrl0(
+        .rst(rst),
+        .stallreq_from_id(stallreq_from_id),
+        .stallreq_from_ex(stallreq_from_ex),
+        .stall(stall)
+	);
 	
 endmodule
