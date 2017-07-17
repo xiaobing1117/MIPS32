@@ -11,7 +11,7 @@ module inst_rom(
 
 	reg[`InstBus] inst_mem[0:`InstMemNum-1];
 
-	initial $readmemh ( "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/inst_rom/inst_rom_7_1_1.data", inst_mem );
+	initial $readmemh ( "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/inst_rom/inst_rom_8_2.data", inst_mem );
 
 	always @ (*) begin
 		if (ce == `ChipDisable) begin
