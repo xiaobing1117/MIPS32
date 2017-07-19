@@ -5,6 +5,7 @@ module ex(
 	input wire rst,
 	
 	//送到执行阶段的信息
+	input wire[`RegBus]           inst_i,
 	input wire[`AluOpBus]         aluop_i,
 	input wire[`AluSelBus]        alusel_i,
 	input wire[`RegBus]           reg1_i,
@@ -27,6 +28,10 @@ module ex(
 	input wire[`RegBus]           mem_hi_i,
 	input wire[`RegBus]           mem_lo_i,
 	input wire                    mem_whilo_i,
+	
+	output wire[`AluOpBus]        aluop_o,
+	output wire[`RegBus]          mem_addr_o,
+	output wire[`RegBus]          reg2_o,
 	
 	output reg[`RegAddrBus]       wd_o,
 	output reg                    wreg_o,
@@ -55,6 +60,10 @@ module ex(
 	wire[`RegBus] opdata1_mult;
 	wire[`RegBus] opdata2_mult;
 	wire[`DoubleRegBus] hilo_temp;
+
+    assign aluop_o = aluop_i;
+    assign mem_addr_o = reg1_i + {{16{inst_i[15]}}, inst_i[15:0]};
+    assign reg2_o = reg2_i;
 	
 	assign reg2_i_mux = ((aluop_i == `EXE_SUB_OP) || 
 	                     (aluop_i == `EXE_SUBU_OP) ||	
