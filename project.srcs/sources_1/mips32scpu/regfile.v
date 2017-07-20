@@ -1,18 +1,18 @@
-`timescale 1ns / 1ps
+`timescale 1ns/1ps
 `include "defines.v"
 
 module regfile(
 	input wire clk,
-	input wire	rst,
+	input wire rst,
 	
 	//Ð´¶Ë¿Ú
-	input wire	we,
-	input wire[`RegAddrBus]	waddr,
-	input wire[`RegBus]	wdata,
+	input wire we,
+	input wire[`RegAddrBus] waddr,
+	input wire[`RegBus] wdata,
 	
 	//¶Á¶Ë¿Ú1
 	input wire re1,
-	input wire[`RegAddrBus]	raddr1,
+	input wire[`RegAddrBus] raddr1,
 	output reg[`RegBus] rdata1,
 	
 	//¶Á¶Ë¿Ú2
@@ -21,7 +21,7 @@ module regfile(
 	output reg[`RegBus] rdata2	
 );
 
-	reg[`RegBus] regs[0:`RegNum-1];
+	reg[`RegBus]  regs[0:`RegNum-1];
 
 	always @ (posedge clk) begin
 		if (rst == `RstDisable) begin
@@ -31,13 +31,12 @@ module regfile(
 		end
 	end
 	
-	always @ (*) begin
+    always @ (*) begin
 		if(rst == `RstEnable) begin
-			rdata1 <= `ZeroWord;
+            rdata1 <= `ZeroWord;
 	    end else if(raddr1 == `RegNumLog2'h0) begin
 	  		rdata1 <= `ZeroWord;
-	    end else if((raddr1 == waddr) && (we == `WriteEnable) 
-	  	            && (re1 == `ReadEnable)) begin
+	    end else if((raddr1 == waddr) && (we == `WriteEnable) && (re1 == `ReadEnable)) begin
 	  	    rdata1 <= wdata;
 	    end else if(re1 == `ReadEnable) begin
 	        rdata1 <= regs[raddr1];
@@ -51,8 +50,7 @@ module regfile(
 			rdata2 <= `ZeroWord;
 	    end else if(raddr2 == `RegNumLog2'h0) begin
 	  		rdata2 <= `ZeroWord;
-	    end else if((raddr2 == waddr) && (we == `WriteEnable) 
-	  	            && (re2 == `ReadEnable)) begin
+	    end else if((raddr2 == waddr) && (we == `WriteEnable)  && (re2 == `ReadEnable)) begin
 	  	    rdata2 <= wdata;
 	    end else if(re2 == `ReadEnable) begin
 	        rdata2 <= regs[raddr2];

@@ -2,6 +2,8 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/Vivado/MIPS32/project.srcs/
 INFO: [VRFC 10-311] analyzing module ctrl
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/data_ram.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module data_ram
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module div
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/ex.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ex
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/ex_mem.v" into library xil_defaultlib
@@ -10,7 +12,6 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/Vivado/MIPS32/project.srcs/
 INFO: [VRFC 10-311] analyzing module hilo_reg
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/id.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module id
-WARNING: [VRFC 10-2096] empty statement in sequential block [E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/id.v:449]
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/id_ex.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module id_ex
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/Code/Vivado/MIPS32/project.srcs/sources_1/mips32scpu/if_id.v" into library xil_defaultlib
